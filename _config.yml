@@ -6,7 +6,7 @@ baseurl: "/blog/" # the subpath of your site, e.g. /blog/
 url: "www.gmbjjwnc68.com" # the base hostname & protocol for your site
 
 instagram_username: gmbjjwnc
-github_username: gmbjjwnc68
+facebook_username: gmbjjwnc68
 
 # Build settings
 markdown: kramdown
