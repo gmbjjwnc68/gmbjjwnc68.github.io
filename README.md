@@ -1,14 +1,7 @@
-# Creative Theme for Jekyll
+# Gustavo Machado Brazilian Jiu-Jitsu 68
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+Visit us at: https://www.gmbjjwnc68.com/
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
+## Questions? Comments? Concerns?
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
-
-## To use the Creative Theme template in your project
-
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
-
+Please reach out to us at gmbjjwnc68@yahoo.com with any questions, etc. This repository is maintained by [Momosimo](https://github.com/Momosimo).
