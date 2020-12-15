@@ -323,6 +323,10 @@ header {
     @include button-variant(white, $theme-primary, $theme-primary);
 }
 
+.btn-whiteblack {
+    @include button-variant(white, $theme-dark, $theme-dark);
+}
+
 .btn {
     @include sans-serif-font;
     border: none;
