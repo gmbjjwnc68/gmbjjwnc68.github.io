@@ -25,7 +25,7 @@ hr.dark {
 }
 
 hr.gray {
-    border-color: darken($theme-primary, 10%);
+    border-color: darken($theme-dark, 10%);
     border-width: 3px;
     max-width: 50px;
 }
