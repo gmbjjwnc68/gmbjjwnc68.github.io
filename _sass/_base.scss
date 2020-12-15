@@ -316,53 +316,54 @@ header {
 
 .gallery-box {
     position: relative;
-    display: block;
-    margin: 0 auto;
-    .gallery-box-caption {
-        color: white;
-        opacity: 0;
-        display: block;
-        background: rgba( $theme-primary, .9 );
-        position: absolute;
-        bottom: 0;
+    width: 100%;
+    min-height: auto;
+    @include background-cover;
+    background-position: left;
+    background-image: url('../img/header.jpg');
+    text-align: center;
+    color: white;
+    .header-content {
+        position: relative;
         text-align: center;
+        padding: 100px 15px 100px;
         width: 100%;
-        height: 100%;
-        @include transition-all;
-        .gallery-box-caption-content {
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            .project-category,
-            .project-name {
-                @include sans-serif-font;
-                padding: 0 15px;
-            }
-            .project-category {
+        .header-content-inner {
+            h1 {
+                font-weight: 700;
                 text-transform: uppercase;
-                font-weight: 600;
-                font-size: 14px;
+                margin-top: 0;
+                margin-bottom: 0;
             }
-            .project-name {
-                font-size: 18px;
+            hr {
+                margin: 30px auto;
             }
-        }
-    }
-    &:hover {
-        .gallery-box-caption {
-            opacity: 1;
+            p {
+                font-weight: 300;
+                color: rgba(white, .7);
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
         }
     }
     @media (min-width: 768px) {
-        .gallery-box-caption {
-            .gallery-box-caption-content {
-                .project-category {
-                    font-size: 16px;
-                }
-                .project-name {
-                    font-size: 22px;
+        min-height: 100%;
+        .header-content {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            padding: 0 50px;
+            .header-content-inner {
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                p {
+                    font-size: 18px;
+                    max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
