@@ -299,13 +299,8 @@ header {
     @include button-variant($theme-dark, white, white);
 }
 
-
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
-}
-
-.btn-tertiary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant($theme-dark, $theme-primary, $theme-primary);
 }
 
 .btn {
