@@ -296,7 +296,7 @@ header {
 
 // Button Styles
 .btn-default {
-    @include button-variant(white, white, white);
+    @include button-variant($theme-dark, white, white);
 }
 
 
