@@ -70,8 +70,8 @@ aside {
 // Navigation
 
 .navbar-default {
-    background-color: white;
-    border-color: rgba($theme-dark, .5);
+    background-color: $theme-dark;
+    border-color: white;
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
