@@ -53,12 +53,12 @@ p {
 }
 
 .bg-dark {
-    background-color: $theme-dark;
+    background-color: lighten($theme-dark, 20%);
     color: white;
 }
 
 .bg-light {
-    background-color: darken(white, 50%);
+    background-color: darken(white, 20%);
     color: black;
 }
 
