@@ -18,6 +18,12 @@ hr.light {
     border-color: white;
 }
 
+hr.dark {
+    border-color: black;
+    border-width: 3px;
+    max-width: 50px;
+}
+
 a {
     @include transition-all;
     color: $theme-primary;
