@@ -57,6 +57,11 @@ p {
     color: white;
 }
 
+.bg-light {
+    background-color: darken(white, 10%);
+    color: black;
+}
+
 .text-faded {
     color: rgba(white, .7);
 }
