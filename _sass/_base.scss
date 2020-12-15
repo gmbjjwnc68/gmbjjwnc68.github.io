@@ -24,6 +24,12 @@ hr.dark {
     max-width: 50px;
 }
 
+hr.gray {
+    border-color: darken($theme-primary, 10%);
+    border-width: 3px;
+    max-width: 50px;
+}
+
 a {
     @include transition-all;
     color: $theme-primary;
