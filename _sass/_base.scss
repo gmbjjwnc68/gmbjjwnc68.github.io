@@ -296,10 +296,15 @@ header {
 
 // Button Styles
 .btn-default {
-    @include button-variant($theme-dark, white, white);
+    @include button-variant(white, white, white);
 }
 
+
 .btn-primary {
+    @include button-variant(white, $theme-primary, $theme-primary);
+}
+
+.btn-tertiary {
     @include button-variant(white, $theme-primary, $theme-primary);
 }
 
