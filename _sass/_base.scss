@@ -319,6 +319,10 @@ header {
     @include button-variant($theme-dark, $theme-primary, $theme-primary);
 }
 
+.btn-whiteyellow {
+    @include button-variant(white, $theme-primary, $theme-primary);
+}
+
 .btn {
     @include sans-serif-font;
     border: none;
