@@ -30,6 +30,12 @@ hr.gray {
     max-width: 50px;
 }
 
+hr.lightgray {
+    border-color: darken(white, 20%);
+    border-width: 3px;
+    max-width: 50px;
+}
+
 a {
     @include transition-all;
     color: $theme-primary;
