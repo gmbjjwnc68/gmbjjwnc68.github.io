@@ -235,6 +235,18 @@ header {
 
 // Sections
 
+.bg-image {
+    position: relative;
+    background-image: url("../img/header.jpg");
+    background-color: #cccccc;
+    min-height: auto;
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    @include background-cover;
+    background-size: cover;
+}
+
 .contact {
     .contact-address {
         font-size: 1.75em;
@@ -315,61 +327,6 @@ header {
     }
 }
 
-gallery-box {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    @include background-cover;
-    background-position: left;
-    background-image: url('../img/header.jpg');
-    text-align: center;
-    color: white;
-    .gallery-content {
-        position: relative;
-        text-align: center;
-        padding: 100px 15px 100px;
-        width: 100%;
-        .gallery-content-inner {
-            h1 {
-                font-weight: 700;
-                text-transform: uppercase;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-            hr {
-                margin: 30px auto;
-            }
-            p {
-                font-weight: 300;
-                color: rgba(white, .7);
-                font-size: 16px;
-                margin-bottom: 50px;
-            }
-        }
-    }
-    @media (min-width: 768px) {
-        min-height: 100%;
-        .gallery-content {
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            padding: 0 50px;
-            .gallery-content-inner {
-                max-width: 1000px;
-                margin-left: auto;
-                margin-right: auto;
-                p {
-                    font-size: 18px;
-                    max-width: 80%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-        }
-    }
-}
 
 .call-to-action {
     h2 {
