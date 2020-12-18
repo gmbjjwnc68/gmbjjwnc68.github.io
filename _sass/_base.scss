@@ -182,7 +182,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: left;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
