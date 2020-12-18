@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h4 {
+              width: 100%;
+              min-height: 100%;
+              margin: 0;
+/*              height: auto;*/
+              /*max-width: 100%;*/
+              background-attachment: fixed;
+              position: relative;
+              background-size: cover;
+              @include background-cover;
+              background-position: center;
+              background-image: url('../img/header.jpg');
+/*              @media only screen and (min-width: 768px) {
+                min-height: 100%;
+              }*/
+            }
+            span {
+              position: relative;
+              text-align: center;
+              width: 100%;
+            }
+            /*mobile*/
+            @media only screen and (hover: none) and (pointer: coarse){
+              h4 {
+                background-attachment: scroll;
+              }
+            }
+            /*desktop*/
+            @media only screen and (min-width: 768px) {
+              h4 {
+                min-height: 100%;
+              }
+            }
+        </style>
+    </head>
+    <body>
+      <span>
+        <h4></h4>
+      </span>
+    </body>
+</html>
