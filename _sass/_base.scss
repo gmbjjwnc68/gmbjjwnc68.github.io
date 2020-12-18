@@ -179,7 +179,7 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 100%;
     @include background-cover;
     background-position: left;
     background-size: cover;
