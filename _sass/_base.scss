@@ -183,7 +183,7 @@ header {
     @include background-cover;
     background-position: left;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
