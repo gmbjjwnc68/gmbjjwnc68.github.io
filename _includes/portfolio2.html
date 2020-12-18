@@ -7,7 +7,7 @@
               height: 30em;
               /*min-height: 90%;*/
               margin: 0;
-              background-attachment: scroll;
+              background-attachment: fixed;
               background-size: cover;
               /*height: auto;*/
               /*max-width: 100%;*/
@@ -16,10 +16,9 @@
               background-position: left center;
               background-image: url('../img/sweaty_header.jpg');
             }
-            @media (min-width: 768px){
+            @media (max-width: 480px){
               h4 {
-                height: 30em;
-                background-attachment: fixed;
+                background-attachment: scroll;
               }
             }
         </style>
