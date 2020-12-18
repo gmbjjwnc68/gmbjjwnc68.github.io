@@ -5,6 +5,7 @@
             h3 {
               width: 100%;
               /*min-height: 90%;*/
+              min-height: auto;
               height: 20em;
               margin: 0;
               background-attachment: fixed;
@@ -30,6 +31,12 @@
             @media only screen and (hover: none) and (pointer: coarse){
               h3 {
                 background-attachment: scroll;
+              }
+            }
+            /*desktop*/
+            @media only screen and (min-width: 768px) {
+              h3 {
+                min-height: 100%;
               }
             }
         </style>

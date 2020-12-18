@@ -209,11 +209,13 @@ header {
             }
         }
     }
+    /*mobile*/
     @media only screen and (hover: none) and (pointer: coarse){
         header {
             background-attachment: scroll;
         }
     }
+    /*desktop*/
     @media only screen and (min-width: 768px) {
         min-height: 100%;
         .header-content {
