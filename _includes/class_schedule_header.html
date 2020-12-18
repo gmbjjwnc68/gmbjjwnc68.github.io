@@ -8,6 +8,7 @@
               margin: 0;
               /*height: auto;*/
               /*max-width: 100%;*/
+              background-attachment: fixed;
               position: relative;
               background-size: cover;
               @include background-cover;
@@ -21,6 +22,11 @@
               position: relative;
               text-align: center;
               width: 100%;
+            }
+            @media only screen and (hover: none) and (pointer: coarse){
+              h4 {
+                background-attachment: scroll;
+              }
             }
         </style>
     </head>

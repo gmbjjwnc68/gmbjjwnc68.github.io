@@ -182,7 +182,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: left;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
@@ -207,6 +207,11 @@ header {
                 font-size: 16px;
                 margin-bottom: 50px;
             }
+        }
+    }
+    @media only screen and (hover: none) and (pointer: coarse){
+        header {
+            background-attachment: scroll;
         }
     }
     @media only screen and (min-width: 768px) {
