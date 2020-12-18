@@ -297,6 +297,7 @@ header {
             .project-name {
                 @include sans-serif-font;
                 padding: 0 15px;
+                color: black;
             }
             .project-category {
                 text-transform: uppercase;
