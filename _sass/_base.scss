@@ -219,6 +219,7 @@ header {
     /*desktop*/
     @media only screen and (min-width: 768px) {
         min-height: 100%;
+        background-attachment: fixed;
         .header-content {
             position: absolute;
             top: 50%;
