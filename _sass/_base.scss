@@ -136,7 +136,7 @@ aside {
             }
         }
     }
-    @media only screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
@@ -217,7 +217,7 @@ header {
         }
     }
     /*desktop*/
-    @media only screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         min-height: 100%;
         background-attachment: fixed;
         .header-content {
@@ -272,7 +272,7 @@ header {
 .service-box {
     max-width: 400px;
     margin: 50px auto 0;
-    @media only screen and (min-width: 992px) {
+    @media (min-width: 992px) {
         margin: 20px auto 0;
     }
     p {
@@ -326,7 +326,7 @@ header {
             opacity: 1;
         }
     }
-    @media only screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         .portfolio-box-caption {
             .portfolio-box-caption-content {
                 .project-category {
