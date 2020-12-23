@@ -190,7 +190,7 @@ header {
     width: 100%;
     min-height: auto;
     @include background-cover;
-    background-position: left;
+    background-position: 10%;
     background-size: cover;
     background-attachment: scroll;
     background-image: url('../img/header.webp');
@@ -199,7 +199,7 @@ header {
     .header-content {
         position: relative;
         text-align: center;
-        padding: 100px 15px 100px;
+        padding: 10em 15px 12em;
         width: 100%;
         .header-content-inner {
             h1 {
