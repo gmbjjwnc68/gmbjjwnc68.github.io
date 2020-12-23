@@ -33,11 +33,17 @@
                 font-size: 16px;
                 margin-bottom: 50px;
             }
+            img {
+                height: 10em;
+                width: auto;
+                margin-bottom: 2em;
+                margin-left: 1em;
+            }
         </style>
     </head>
     <body>
-        <section class="bg-dark">
-            <div class="container" id="schedule">
+        <section class="bg-dark" id="schedule">
+            <div class="container">
                 <hr class="gray">
                 <div class="row text-center">
                     <h1>Class Schedule</h1>
@@ -107,10 +113,12 @@
                     <p>All classes are in the Gi unless otherwise indicated.</p>
                 </div>
                 <div class="row text-center">
-                    <script>
+                   <script>
                         xmas = new Date('12/26/2020');
                         var x = new Date();
                         if(x < xmas){
+                        document.write("<img src='../img/santa_hat.webp' />");
+                        document.write("<br />");
                         document.write("<h2>Holiday Notice</h2>");
                         document.write("<br />");
                         document.write("<p>The academy will be <b>open</b> ");
