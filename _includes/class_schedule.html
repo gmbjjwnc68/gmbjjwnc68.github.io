@@ -56,7 +56,15 @@
                     <div class="col-lg-1 text-center">
                     </div>
                     <div class="col-lg-2 text-center">
-                        <h2><b>Monday</b></h2>
+                        <script>
+                        var today = new Date();
+                        var weekday = today.getDay();
+                        if(weekday == 1){
+                            document.write("<h2><b>Monday</b></h2>");
+                        } else {
+                            document.write("<h2 style='opacity: 0.5;' class='text-faded'>Monday</h2>");
+                        }
+                        </script>
                         <br>
                         <ul>
                             <li>Fundamentals</li>
@@ -65,7 +73,15 @@
                         <br><br><br>
                     </div>
                     <div class="col-lg-2 text-center">
-                        <h2><b>Tuesday</b></h2>
+                        <script>
+                        var today = new Date();
+                        var weekday = today.getDay();
+                        if(weekday == 2){
+                            document.write("<h2><b>Tuesday</b></h2>");
+                        } else {
+                            document.write("<h2 style='opacity: 0.5;' class='text-faded'>Tuesday</h2>");
+                        }
+                        </script>
                         <br>
                         <ul>
                             <li>Kids</li>
@@ -77,7 +93,15 @@
                         <br><br><br>
                     </div>
                     <div class="col-lg-2 text-center">
-                        <h2><b>Wednesday</b></h2>
+                        <script>
+                        var today = new Date();
+                        var weekday = today.getDay();
+                        if(weekday == 3){
+                            document.write("<h2><b>Wednesday</b></h2>");
+                        } else {
+                            document.write("<h2 style='opacity: 0.5;' class='text-faded'>Wednesday</h2>");
+                        }
+                        </script>
                         <br>
                         <ul>
                             <li>Advanced No-Gi</li>
@@ -86,7 +110,15 @@
                         <br><br><br>
                     </div>
                     <div class="col-lg-2 text-center">
-                        <h2><b>Thursday</b></h2>
+                        <script>
+                        var today = new Date();
+                        var weekday = today.getDay();
+                        if(weekday == 4){
+                            document.write("<h2><b>Thursday</b></h2>");
+                        } else {
+                            document.write("<h2 style='opacity: 0.5;' class='text-faded'>Thursday</h2>");
+                        }
+                        </script>
                         <br>
                         <ul>
                             <li>Kids</li>
@@ -98,7 +130,15 @@
                         <br><br><br>
                     </div>
                     <div class="col-lg-2 text-center">
-                        <h2><b>Saturday</b></h2>
+                        <script>
+                        var today = new Date();
+                        var weekday = today.getDay();
+                        if(weekday == 6){
+                            document.write("<h2><b>Saturday</b></h2>");
+                        } else {
+                            document.write("<h2 style='opacity: 0.5;' class='text-faded'>Saturday</h2>");
+                        }
+                        </script>
                         <br>
                         <ul>
                             <li>Open Mat</li>
@@ -119,7 +159,7 @@
                         if(x < xmas){
                         document.write("<img src='../img/santa_hat.webp' />");
                         document.write("<br />");
-                        document.write("<h2>Holiday Notice</h2>");
+                        document.write("<h2><b>Holiday Notice</b></h2>");
                         document.write("<br />");
                         document.write("<p>The academy will be <b>open</b> ");
                         document.write("Christmas Eve 12 - 1 PM, ");
