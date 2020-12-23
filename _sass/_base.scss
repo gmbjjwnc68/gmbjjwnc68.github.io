@@ -4,6 +4,9 @@ body {
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     @include serif-font;
 }
