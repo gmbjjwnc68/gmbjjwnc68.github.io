@@ -3,6 +3,8 @@
     <head>
         <style>
             h4 {
+              animation-name: header_fade;
+              animation-duration: 5s;
               width: 100%;
               min-height: 100%;
               margin: 0;
@@ -29,6 +31,11 @@
               h4 {
                 min-height: 100%;
               }
+            }
+            /*animation setup*/
+            @keyframes header_fade {
+                0% {opacity: 0%;}
+                100% {opacity: 100%;}
             }
         </style>
     </head>

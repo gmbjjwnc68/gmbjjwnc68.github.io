@@ -105,8 +105,14 @@ aside {
 }
 
 // Navigation
-
+@keyframes nav_fade {
+    0% {opacity: 0%;}
+    20% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
 .navbar-default {
+    animation-name: nav_fade;
+    animation-duration: 5s;
     background-color: white;
     border-color: $theme-dark;
     @include sans-serif-font;
@@ -184,8 +190,18 @@ aside {
 }
 
 // Homepage Header
-
+@keyframes header_fade {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+@keyframes header_text_fade {
+    0% {opacity: 0%;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
 header {
+    animation-name: header_fade;
+    animation-duration: 5s;
     position: relative;
     width: 100%;
     min-height: auto;
@@ -197,6 +213,9 @@ header {
     text-align: center;
     color: white;
     .header-content {
+        animation-name: header_text_fade;
+        animation-duration: 5s;
+        animation-delay: 0s;
         position: relative;
         text-align: center;
         padding: 10em 15px 12em;
