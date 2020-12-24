@@ -15,15 +15,41 @@
               background-position: center;
               background-image: url('../img/clean_mat.webp');
             }
-            span {
-              position: relative;
-              text-align: center;
-              width: 100%;
+            .text {
+              display: block;
+              animation-name: text_fade;
+              animation-duration: 3s;
+              background-color: white;
+              color: black;
+              font-size: 10vw; /* Responsive font size */
+              font-weight: bold;
+              margin: 0 auto; /* Center the text container */
+              padding: 10px;
+              width: 50%;
+              text-align: center; /* Center text */
+              position: absolute; /* Position text */
+              top: 50%; /* Position text in the middle */
+              left: 50%; /* Position text in the middle */
+              transform: translate(-50%, -50%); /* Position text in the middle */
+              mix-blend-mode: screen; /* This makes the cutout text possible */
+            }
+            .arrow {
+              animation-name: glow;
+              animation-duration: 10s;
+              display: block;
+              position: absolute;
+              bottom: 5%;
+              right: 10%;
+              opacity: 75%;
+              width: auto;
             }
             /*mobile*/
             @media only screen and (hover: none) and (pointer: coarse){
               h4 {
                 background-attachment: scroll;
+              }
+              .text {
+                display: none;
               }
             }
             /*desktop*/
@@ -31,24 +57,42 @@
               h4 {
                 min-height: 100%;
               }
+              .arrow {
+                right: 21.25%;
+              }
             }
             /*animation setup*/
             @keyframes header_fade {
                 0% {opacity: 0%;}
                 100% {opacity: 100%;}
             }
+            @keyframes text_fade {
+                0% {opacity: 0%;}
+                5% {opacity: 0%;}
+                100% {opacity: 100%;}
+            }
+            @keyframes glow {
+              0% {opacity: 0%;}
+              10% {opacity: 100%;}
+              20% {opacity: 0%;}
+              30% {opacity: 100%;}
+              40% {opacity: 0%;}
+              50% {opacity: 100%;}
+              60% {opacity: 0%;}
+              70% {opacity: 100%;}
+              80% {opacity: 0%;}
+              90% {opacity: 100%;}
+              100% {opacity: 75%;}
+            }
         </style>
     </head>
     <body>
-      <a href="#gallery_title">
-      <!-- <span onclick="myFunction()"> -->
-        <h4></h4>
-      </a>
-<!--       <script>
-      function myFunction() {
-        var elmnt = document.getElementById("gallery_title");
-        elmnt.scrollIntoView();
-      }
-      </script> -->
+        <h4>
+          <a href="#gallery_title">
+            <span class="arrow">
+                <i class="fa fa-arrow-down fa-5x wow bounceInDown" data-wow-delay="2s" style="color:white"></i>
+            </span>
+          </a>
+        </h4>
     </body>
 </html>

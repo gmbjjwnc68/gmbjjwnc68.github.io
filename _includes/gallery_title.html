@@ -1,6 +1,7 @@
 <head>
     <style>
         h1 {
+                display: none;
                 font-weight: 700;
                 color: white;
                 text-transform: uppercase;
@@ -8,19 +9,18 @@
                 padding: 0;
             }
         h2 {
+                display: none;
                 margin: 0;
                 padding: 0;
             }
+        /*mobile*/
+        @media only screen and (hover: none) and (pointer: coarse){
+            h1,
+            h2 {
+                display: block;
+            }
+        }
     </style>
 </head>
 
-<section class="bg-dark" id="gallery_title">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h1>Gallery</h1>
-                <h2 class="text-faded">2020</h2>
-            </div>
-        </div>
-    </div>
-</section>
+<span class="schedule-title" id="gallery_title"><span class="bg-dark"><br><br><h1>Gallery</h1><h2 class="text-faded">2020</h2><br><br><br></span></span>
