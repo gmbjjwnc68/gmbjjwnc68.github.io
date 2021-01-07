@@ -1,6 +1,6 @@
 # Gustavo Machado Brazilian Jiu-Jitsu 68
 
-Visit us at [our website](www.gmbjjwnc68.com)!
+Visit us at [our website](http://www.gmbjjwnc68.com)!
 
 ## Questions? Comments? Concerns?
 
