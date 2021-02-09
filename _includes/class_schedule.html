@@ -1,193 +1,193 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            h1 {
-                font-weight: 700;
-                color: white;
-                text-transform: uppercase;
-                margin: 0;
-                padding: 0;
+  <head>
+    <style>
+      h1 {
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+      .title {
+        background: #000000;
+        text-align: center;
+        margin: 0;
+        border-top: 0;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        position: relative;
+      }
+      p {
+        font-weight: 200;
+        color: rgba(white, .7);
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+      img {
+        height: 10em;
+        width: auto;
+        margin-bottom: 2em;
+        margin-left: 1em;
+      }
+      .bg-dark {
+        animation-name: header_fade;
+        animation-duration: 5s;
+      }
+      /*animation setup*/
+      @keyframes header_fade {
+        0% {opacity: 0%;}
+        100% {opacity: 100%;}
+      }
+      @keyframes holiday_fade {
+        0% {opacity: 0%;}
+        50% {opacity: 0%;}
+        100% {opacity: 100%;}
+      }
+    </style>
+  </head>
+  <body>
+    <section class="bg-dark" id="schedule">
+      <div class="container">
+        <hr class="gray">
+        <div class="row text-center">
+          <h1>Class Schedule</h1>
+          <h2 class="text-faded">2020-{{ site.year }}</h2>
+          <br>
+          <hr>
+          <br>
+        </div>
+        <div class="row">
+          <div class="col-lg-1 text-center">
+          </div>
+          <div class="col-lg-2 text-center">
+            <script>
+            var today = new Date();
+            var weekday = today.getDay();
+            if(weekday == 1){
+              document.write("<h2><b>Monday</b></h2>");
+            } else {
+              document.write("<h2 style='opacity: 0.5;' class='text-faded'>Monday</h2>");
             }
-            h2 {
-                margin: 0;
-                padding: 0;
+            </script>
+            <br>
+            <ul>
+              <li>Fundamentals</li>
+              <li class="text-faded">6 - 8 PM</li>
+            </ul>
+            <br><br><br>
+          </div>
+          <div class="col-lg-2 text-center">
+            <script>
+            var today = new Date();
+            var weekday = today.getDay();
+            if(weekday == 2){
+              document.write("<h2><b>Tuesday</b></h2>");
+            } else {
+              document.write("<h2 style='opacity: 0.5;' class='text-faded'>Tuesday</h2>");
             }
-            .title {
-                background: #000000;
-                text-align: center;
-                margin: 0;
-                border-top: 0;
+            </script>
+            <br>
+            <ul>
+              <li>Kids</li>
+              <li class="text-faded">6:15 - 7:15 PM</li>
+              <br>
+              <li>Advanced</li>
+              <li class="text-faded">7:30 - 9 PM</li>
+            </ul>
+            <br><br><br>
+          </div>
+          <div class="col-lg-2 text-center">
+            <script>
+            var today = new Date();
+            var weekday = today.getDay();
+            if(weekday == 3){
+              document.write("<h2><b>Wednesday</b></h2>");
+            } else {
+              document.write("<h2 style='opacity: 0.5;' class='text-faded'>Wednesday</h2>");
             }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
+            </script>
+            <br>
+            <ul>
+              <li>Advanced No-Gi</li>
+              <li class="text-faded">6 - 8 PM</li>
+            </ul>
+            <br><br><br>
+          </div>
+          <div class="col-lg-2 text-center">
+            <script>
+            var today = new Date();
+            var weekday = today.getDay();
+            if(weekday == 4){
+              document.write("<h2><b>Thursday</b></h2>");
+            } else {
+              document.write("<h2 style='opacity: 0.5;' class='text-faded'>Thursday</h2>");
             }
-            body {
-                position: relative;
+            </script>
+            <br>
+            <ul>
+              <li>Kids</li>
+              <li class="text-faded">6:15 - 7:15 PM</li>
+              <br>
+              <li>Advanced</li>
+              <li class="text-faded">7:30 - 9 PM</li>
+            </ul>
+            <br><br><br>
+          </div>
+          <div class="col-lg-2 text-center">
+            <script>
+            var today = new Date();
+            var weekday = today.getDay();
+            if(weekday == 6){
+              document.write("<h2><b>Saturday</b></h2>");
+            } else {
+              document.write("<h2 style='opacity: 0.5;' class='text-faded'>Saturday</h2>");
             }
-            p {
-                font-weight: 200;
-                color: rgba(white, .7);
-                font-size: 16px;
-                margin-bottom: 50px;
-            }
-            img {
-                height: 10em;
-                width: auto;
-                margin-bottom: 2em;
-                margin-left: 1em;
-            }
-            .bg-dark {
-                animation-name: header_fade;
-                animation-duration: 5s;
-            }
-            /*animation setup*/
-            @keyframes header_fade {
-                0% {opacity: 0%;}
-                100% {opacity: 100%;}
-            }
-            @keyframes holiday_fade {
-                0% {opacity: 0%;}
-                50% {opacity: 0%;}
-                100% {opacity: 100%;}
-            }
-        </style>
-    </head>
-    <body>
-        <section class="bg-dark" id="schedule">
-            <div class="container">
-                <hr class="gray">
-                <div class="row text-center">
-                    <h1>Class Schedule</h1>
-                    <h2 class="text-faded">2020-{{ site.year }}</h2>
-                    <br>
-                    <hr>
-                    <br>
-                </div>
-                <div class="row">
-                    <div class="col-lg-1 text-center">
-                    </div>
-                    <div class="col-lg-2 text-center">
-                        <script>
-                        var today = new Date();
-                        var weekday = today.getDay();
-                        if(weekday == 1){
-                            document.write("<h2><b>Monday</b></h2>");
-                        } else {
-                            document.write("<h2 style='opacity: 0.5;' class='text-faded'>Monday</h2>");
-                        }
-                        </script>
-                        <br>
-                        <ul>
-                            <li>Fundamentals</li>
-                            <li class="text-faded">6 - 8 PM</li>
-                        </ul>
-                        <br><br><br>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                        <script>
-                        var today = new Date();
-                        var weekday = today.getDay();
-                        if(weekday == 2){
-                            document.write("<h2><b>Tuesday</b></h2>");
-                        } else {
-                            document.write("<h2 style='opacity: 0.5;' class='text-faded'>Tuesday</h2>");
-                        }
-                        </script>
-                        <br>
-                        <ul>
-                            <li>Kids</li>
-                            <li class="text-faded">6:15 - 7:15 PM</li>
-                            <br>
-                            <li>Advanced</li>
-                            <li class="text-faded">7:30 - 9 PM</li>
-                        </ul>
-                        <br><br><br>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                        <script>
-                        var today = new Date();
-                        var weekday = today.getDay();
-                        if(weekday == 3){
-                            document.write("<h2><b>Wednesday</b></h2>");
-                        } else {
-                            document.write("<h2 style='opacity: 0.5;' class='text-faded'>Wednesday</h2>");
-                        }
-                        </script>
-                        <br>
-                        <ul>
-                            <li>Advanced No-Gi</li>
-                            <li class="text-faded">6 - 8 PM</li>
-                        </ul>
-                        <br><br><br>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                        <script>
-                        var today = new Date();
-                        var weekday = today.getDay();
-                        if(weekday == 4){
-                            document.write("<h2><b>Thursday</b></h2>");
-                        } else {
-                            document.write("<h2 style='opacity: 0.5;' class='text-faded'>Thursday</h2>");
-                        }
-                        </script>
-                        <br>
-                        <ul>
-                            <li>Kids</li>
-                            <li class="text-faded">6:15 - 7:15 PM</li>
-                            <br>
-                            <li>Advanced</li>
-                            <li class="text-faded">7:30 - 9 PM</li>
-                        </ul>
-                        <br><br><br>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                        <script>
-                        var today = new Date();
-                        var weekday = today.getDay();
-                        if(weekday == 6){
-                            document.write("<h2><b>Saturday</b></h2>");
-                        } else {
-                            document.write("<h2 style='opacity: 0.5;' class='text-faded'>Saturday</h2>");
-                        }
-                        </script>
-                        <br>
-                        <ul>
-                            <li>Open Mat</li>
-                            <li class="text-faded">10AM - 12 PM</li>
-                        </ul>
-                        <br><br><br>
-                    </div>
-                    <div class="col-lg-1 text-center">
-                    </div>
-                </div>
-                <div class="row text-center text-faded" style="max-width: 85%; margin:auto">
-                    <p>All classes are in the Gi unless otherwise indicated.</p>
-                </div>
-                <span class="holiday-notice">
-                    <div class="row text-center wow bounceIn" style="max-width: 95%; margin:auto; margin-top: 0; animation-name: bounceIn; animation-duration: 1s; animation-iteration-count: 3">
-                       <script>
-                            xmas = new Date('12/26/2020');
-                            var x = new Date();
-                            if(x < xmas){
-                            document.write("<img src='../img/santa_hat.webp' />");
-                            document.write("<br />");
-                            document.write("<h2><b>Holiday Notice</b></h2>");
-                            document.write("<br />");
-                            document.write("<hr>");
-                            document.write("<br />");
-                            document.write("<p>The academy will be <b>open</b> ");
-                            document.write("Christmas Eve 12 - 1 PM, ");
-                            document.write("and <b>closed</b> Christmas Day. ");
-                            document.write("<br />");
-                            document.write("Classes will resume on 12/26.</p>");
-                            } else {}
-                        </script>
-                    </div>
-                </span>
-            </div>
-        </section>
-    </body>
+            </script>
+            <br>
+            <ul>
+              <li>Open Mat</li>
+              <li class="text-faded">10AM - 12 PM</li>
+            </ul>
+            <br><br><br>
+          </div>
+          <div class="col-lg-1 text-center">
+          </div>
+        </div>
+        <div class="row text-center text-faded" style="max-width: 85%; margin:auto">
+          <p>All classes are in the Gi unless otherwise indicated.</p>
+        </div>
+        <span class="holiday-notice">
+          <div class="row text-center wow bounceIn" style="max-width: 95%; margin:auto; margin-top: 0; animation-name: bounceIn; animation-duration: 1s; animation-iteration-count: 3">
+             <script>
+              xmas = new Date('12/26/2020');
+              var x = new Date();
+              if(x < xmas){
+              document.write("<img src='../img/santa_hat.webp' />");
+              document.write("<br />");
+              document.write("<h2><b>Holiday Notice</b></h2>");
+              document.write("<br />");
+              document.write("<hr>");
+              document.write("<br />");
+              document.write("<p>The academy will be <b>open</b> ");
+              document.write("Christmas Eve 12 - 1 PM, ");
+              document.write("and <b>closed</b> Christmas Day. ");
+              document.write("<br />");
+              document.write("Classes will resume on 12/26.</p>");
+              } else {}
+            </script>
+          </div>
+        </span>
+      </div>
+    </section>
+  </body>
 </html>
