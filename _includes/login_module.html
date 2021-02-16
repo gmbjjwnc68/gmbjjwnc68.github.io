@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    font-family: Arial;
+    margin-bottom: 5em;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+  h1 {
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+  }
+  h2 {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 2em;
+      /*opacity: 50%;*/
+  }
+  p {
+    max-width: 75%;
+    margin-left: 12.5%;
+    text-align: justify;
+    font-size: 1.5em;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 5em;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0.1em;
+    top: .75em;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0.1em;
+    top: .75em;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    position: relative;
+    top: -2em;
+    text-align: center;
+  }
+  .text-faded {
+    opacity: 50%;
+  }
+
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+</style>
+
+<span id="learning_module">
+  <body>
+    <section class="bg-dark">
+      <div class="container" style="margin-top: 0em; margin-bottom: 5em; min-height: 20em; min-width: 66%">
+        <hr class="gray">
+        <h1>Members Access</h1>
+        <h2 class="text-faded">Coming Soon!</h2>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a href="https://instagram.com/{{ site.instagram_username }}">
+              <i class="fa fa-lock fa-5x wow bounceIn text-center" data-wow-delay=".75s" style="color:#FBE400"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</span>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    h3 {
+      width: 100%;
+      min-height: auto;
+      height: 20em;
+      margin: 0;
+      background-attachment: fixed;
+      background-size: cover;
+      position: relative;
+      @include background-cover;
+      background-position: center top;
+      background-image: url('../img/gmbjjwnc_gustavo.webp');
+      @media (min-width: 768px) {
+      min-height: 100%;
+      width: 1em;
+      background-size: scroll;
+      }
+    }
+    span {
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+      /*mobile settings*/
+      @media only screen and (hover: none) and (pointer: coarse){
+        h3 {
+        background-attachment: scroll;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="location">
+    <h3></h3>
+    </a>
+  </body>
+</html>
