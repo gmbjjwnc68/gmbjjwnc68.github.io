@@ -1,6 +1,6 @@
-# Gustavo Machado Brazilian Jiu-Jitsu 68
+# Gustavo Machado Brazilian Jiu-Jitsu Wilson NC
 
-Visit us at [our website](http://www.gmbjjwnc68.com)!
+Visit us at [our website](http://www.gmbjjwnc.com)!
 
 ## Questions? Comments? Concerns?
 
